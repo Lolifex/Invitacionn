@@ -16,8 +16,10 @@
         }
 
         #container {
-            width: 1080px;
-            height: 1920px;
+            width: 100vw;
+            height: 100vh;
+            max-width: 1080px;
+            max-height: 1920px;
             position: relative;
             overflow: hidden;
             background-color: #fff;
@@ -31,14 +33,13 @@
             width: 100%;
             height: 100%;
             background: url('V.png') no-repeat center center; /* Ruta de la primera imagen */
-            background-size: contain; /* Asegura que la imagen se ajuste sin cortarse */
-            background-position: center; /* Centra la imagen */
+            background-size: cover; /* Asegura que la imagen se ajuste sin cortarse */
             position: relative;
         }
 
         #first-screen button {
             position: absolute;
-            bottom: 20%;
+            bottom: 10%; /* Ajusta la distancia desde la parte inferior */
             left: 50%;
             transform: translateX(-50%);
             background: #ffc0cb;
@@ -66,14 +67,13 @@
             width: 100%;
             height: 100%;
             background: url('V2.png') no-repeat center center; /* Ruta de la segunda imagen */
-            background-size: contain; /* Asegura que la imagen se ajuste sin cortarse */
-            background-position: center; /* Centra la imagen */
+            background-size: cover; /* Asegura que la imagen se ajuste sin cortarse */
             position: relative;
         }
 
         #confirm-btn {
             position: absolute;
-            top: 75%;
+            top: 70%; /* Ajusta la distancia desde la parte superior */
             left: 50%;
             transform: translateX(-50%);
             background: none;

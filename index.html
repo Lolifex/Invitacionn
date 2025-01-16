@@ -39,7 +39,7 @@
 
         #first-screen button {
             position: absolute;
-            bottom: 15%; /* Ajusta la distancia desde la parte inferior */
+            bottom: 20%; /* Ajusta la distancia desde la parte inferior */
             left: 50%;
             transform: translateX(-50%);
             background: #ffc0cb;
@@ -73,7 +73,7 @@
 
         #confirm-btn {
             position: absolute;
-            top: 90%; /* Ajusta la distancia desde la parte superior */
+            bottom: 20%; /* Ajusta la distancia desde la parte inferior */
             left: 50%;
             transform: translateX(-50%);
             background: none;
@@ -87,8 +87,8 @@
 
         #countdown {
             position: absolute;
-            top: 85%; /* Ajusta la distancia desde la parte superior para estar debajo del cuadro rosa */
-            left: 40%;
+            bottom: 10%; /* Ajusta la distancia desde la parte inferior */
+            left: 50%;
             transform: translateX(-50%);
             font-size: 24px;
             font-weight: bold;
@@ -123,7 +123,7 @@
         }
 
         function startCountdown() {
-            const eventDate = new Date('2025-01-23T15:30:00').getTime(); // Fecha del evento
+            const eventDate = new Date('2024-01-23T15:30:00').getTime(); // Fecha del evento
 
             setInterval(() => {
                 const now = new Date().getTime();
